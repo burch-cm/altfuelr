@@ -72,7 +72,7 @@ A data frame with 40279 observations of 64 variables:
 altfuel
 }
 \description{
-A dataset containing the alternate fuel stations in the United States
+A dataset containing the alternate fuel stations in the United States and Canada
 tracked by the US DOE Alternate Fuels Data Center
 }
 \keyword{datasets}

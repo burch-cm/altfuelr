@@ -1,20 +1,29 @@
 Package: altfuelr
 Title: Provides an interface to the NREL Alternate Fuels Locator API
-Version: 0.0.0.9000
+Version: 0.1.0
 Authors@R: 
     person(given = "Kitt",
            family = "Burch",
            role = c("aut", "cre"),
            email = "christopher.m.burch@gmail.com",
            comment = c(ORCID = "0000-0001-6934-3325"))
-Description: This package provides a number of functions to access the National Energy Research Laboratory (NREL) Alternate Fuel Locator API. The AFL shows the location of alternate fuel stations in the contiguous United States and can be filtered by fuel type, region, zip code, or address.
+Description: This package provides a number of functions to access the 
+    National Energy Research Laboratory (NREL) Alternate Fuel Locator API. 
+    The AFL shows the location of alternate fuel stations in the United States 
+    and Canada. This package also includes the data from the NREL Alternate Fuel
+    database as a data set.
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.1
 Depends: 
-    R (>= 2.10)
+    R (>= 3.1.0)
 Imports: 
     httr,
-    jsonlite
+    jsonlite,
+    purrr,
+    lubridate,
+    dplyr,
+    magrittr,
+    stringr
