@@ -1,5 +1,5 @@
 Package: altfuelr
-Title: Provides an interface to the NREL Alternate Fuels Locator API
+Title: Provides an Interface to the NREL Alternate Fuels Locator API
 Version: 0.1.0
 Authors@R: 
     person(given = "Kitt",
@@ -7,7 +7,7 @@ Authors@R:
            role = c("aut", "cre"),
            email = "christopher.m.burch@gmail.com",
            comment = c(ORCID = "0000-0001-6934-3325"))
-Description: This package provides a number of functions to access the 
+Description: Provides a number of functions to access the 
     National Energy Research Laboratory (NREL) Alternate Fuel Locator API. 
     The AFL shows the location of alternate fuel stations in the United States 
     and Canada. This package also includes the data from the NREL Alternate Fuel

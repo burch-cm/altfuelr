@@ -4,7 +4,7 @@
 \alias{all_stations}
 \title{Find All Alternate Fuel Stations by Criteria}
 \usage{
-all_stations(api_key, params = nrel_params(limit = 100))
+all_stations(api_key, params = nrel_params(limit = "all"))
 }
 \arguments{
 \item{api_key}{Character. An authorized API key for the NREL API service. API keys can be requested at \url{https://developer.nrel.gov/signup/}}

@@ -142,6 +142,18 @@ stations <- function(x) {
     }
 }
 
+#' Count Station Results
+#'
+#' @param x A nrel_api object
+#'
+#' @return A data frame of station count by fuel station type
+#' @export
+#'
+#' @examples
+#' \dontrun{
+#' x <- nearest_stations(MY_API_KEY, location = "Fort Worth, TX", radius = 5)
+#' count_results(x)
+#' }
 count_results <- function(x) {
     if (class(x) != "nrel_api") {
         stop(
@@ -186,7 +198,7 @@ count_results <- function(x) {
 #' my_stations <- get_all_stations(MY_API_KEY, my_params)
 #' stations(my_stations)
 #' }
-all_stations <- function(api_key, params = nrel_params(limit = 100)) {
+all_stations <- function(api_key, params = nrel_params(limit = "all")) {
     altfuel_api(api_key, endpoint = "/api/alt-fuel-stations/v1", params)
 }
 
@@ -256,3 +268,38 @@ nearest_stations <- function(api_key, location = NULL, latitude = NULL, longitud
     altfuel_api(api_key, endpoint = "/api/alt-fuel-stations/v1/nearest", params = .params)
 }
 
+#' Check For Alternate Fuel Nearby
+#'
+#' @param api_key Character. An authorized API key for the NREL API service. API keys can be requested at \url{https://developer.nrel.gov/signup/}
+#' @param location A free-form input describing the address of the location. This may include the address given in a variety of formats, such as: street, city, state, postal code, etc.
+#' @param miles Numeric. The radius (in miles) around the search location to search for stations within. An explicit radius of up to 500.0 miles may be passed in, or the special infinite string may be passed in to find the nearest stations regardless of distance. Defaults to 5.
+#' @param fuel_type Optional. Filter results by a specific fuel type. Options: BD (biodiesel), CNG (compressed natural gas), ELEC (electric), E85 (ethanol/E85), HY (hydrogen), LNG (liquified natural gas), LPG, (propane).
+#'
+#' @return Logical value indicating whether at least one alternative fuel station exists for the given fuel in the given radius around the specified location.
+#' @export
+#'
+#' @examples
+#' \dontrun{
+#' alt_fuel_near(MY_API_KEY, "Nome, AK")
+#' alt_fuel_near(MY_API_KEY, "Raleigh, NC", radius = 10, fuel_type = "LNG")
+#' }
+alt_fuel_near <- function(api_key, location = NULL, miles = 5, fuel_type = NULL) {
+    q_params <- nrel_params(fuel_type = fuel_type)
+    stns <- nearest_stations(api_key, location, radius = miles)
+    if (stns$content$total_results < 1) return (FALSE)
+    n <- stns %>%
+        stations() %>%
+        dplyr::rename("fuel_type" = "fuel_type_code") %>%
+        dplyr::group_by(fuel_type) %>%
+        dplyr::count()
+    if (!is.null(fuel_type)) n <- dplyr::filter(n, fuel_type == fuel_type)
+    n <-
+        dplyr::pull(n) %>%
+        sum(na.rm = TRUE)
+
+    if (n > 0) {
+        return (TRUE)
+    } else {
+        return (FALSE)
+    }
+}

@@ -2,7 +2,9 @@
 
 export("%>%")
 export(all_stations)
+export(alt_fuel_near)
 export(altfuel_api)
+export(count_results)
 export(last_updated)
 export(nearest_stations)
 export(nrel_params)
