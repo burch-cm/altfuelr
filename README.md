@@ -9,8 +9,8 @@
 status](https://travis-ci.com/burch-cm/altfuelr.svg?branch=master)](https://travis-ci.com/burch-cm/altfuelr)
 <!-- badges: end -->
 
-The goal of altfuelr is to provide an R-fiendly interface to the
-National Renewable Energy Labratory (NREL) alternative fuel location
+The goal of altfuelr is to provide an R-friendly interface to the
+National Renewable Energy Laboratory (NREL) alternative fuel location
 tools. The NREL Alternative Fuels Data Center provides resources to
 locate fueling stations around the US and Canada by fuel type. These
 tools are used by DOT constituent agencies to determine the best

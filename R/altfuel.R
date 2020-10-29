@@ -5,14 +5,14 @@
 #'
 #' @format A data frame with 40279 observations of 64 variables:
 #' \describe{
-#'   \item{Fuel_Type_Code}{The coded fuel type available: BD = BioDiesel, CNG = Compressed Natural Gas, ELEC = electric, E88 = Ethanol (E85), HY = Hydrogen, LNG = Liqified Natural Gas, LPG = Propane.}
+#'   \item{Fuel_Type_Code}{The coded fuel type available: BD = BioDiesel, CNG = Compressed Natural Gas, ELEC = electric, E88 = Ethanol (E85), HY = Hydrogen, LNG = Liquified Natural Gas, LPG = Propane.}
 #'   \item{Station_Name}{The name of the fuel station.}
 #'   \item{Street_Address}{The physical street address of the station.}
 #'   \item{Intersection_Directions}{Brief additional information about how to locate the station.}
 #'   \item{City}{The name of the city in which the station is located.}
 #'   \item{State}{The two character code for the U.S. state or Canadian province/territory of the station's location.}
 #'   \item{ZIP}{The postal code for the station.}
-#'   \item{Plus4}{TThe plus-4 portion of the station's ZIP code (U.S. ZIP codes only).}
+#'   \item{Plus4}{The plus-4 portion of the station's ZIP code (U.S. ZIP codes only).}
 #'   \item{Station_Phone}{The telephone number of the fuel station}
 #'   \item{Status_Code}{The current status of the station, given as code values: E = Available, P = Planned, T = Temporarily Unavailable}
 #'   \item{Expected_Date}{For planned stations, the date the station is expected to open or start carrying alternative fuel. For temporarily unavailable stations, the expected date is the date the station is expected to reopen. This date is estimated but not guaranteed.}

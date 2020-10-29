@@ -8,7 +8,7 @@
 #' @param federal_agency Return stations owned by the given federal agency. A federal agency code, or a comma-separated list of multiple federal agency codes, may be given.  Options: all, AAF, CH, CHSW, USACE_CW, CSOSA, DEF, DAF, DA, DOC, HHS, DHS, HUD, DOJ, DOL, DON, DOS, DOI, DOT, DTS, VA, EWDL, ECC, FCSD, FTC, FIN, FOCCG, GSA, GAFA, GAID, GAIT, HLTH, IRC, INA, IC, ISED, JUS, LGHC, NASA, NDEF, NREV, NRES, PARL, PQPCC, PM, PSEP, PSP, SCI, SBT, SI, SSA, TRANS, TREAS, USMC, CBP, USDA, DOD, DOE, EPA, FAA, IRS, USPS, VAFF.
 #' @param cng_fill_type Return only CNG stations that provide the specified type of dispensing capability. A single type, or a comma separated list of multiple types, may be given.  Options: all, B (Fast-fill and time-fill), Q (Fast-fill), T (Time-fill).
 #' @param cng_psi Return only CNG stations that provide the specified PSI pressure. A single pressure level, or a comma separated list of multiple pressure levels, may be given.  Options: all, 2400, 3000, 3600.
-#' @param cng_vehicle_class Return only CNG stations that can accomodate the specified vehicle class size or greater.  Options: all, LD, MD, HD.
+#' @param cng_vehicle_class Return only CNG stations that can accommodate the specified vehicle class size or greater.  Options: all, LD, MD, HD.
 #' @param e85_has_blender_pump Logical. If TRUE, then return only E85 stations that also have a blender pump capable of providing mid-level ethanol blends.
 #' @param ev_network Return only electric charging stations that belong to the given network. A single network, or a comma separated list of multiple networks, may be given.  Options: all, BCHYDRO, Blink Network, ChargePoint Network, Circuit électrique, eCharge Network, Electrify America, Electrify Canada, EV Connect, EVGATEWAY, eVgo Network, FLO, FCN, GE WattStation, Greenlots, Non-Networked, OpConnect, PETROCAN, POWERFLEX, SemaCharge Network, Sun Country Highway, SWTCH, Tesla Destination, Tesla, Volta, Webasto.
 #' @param ev_charging_level Return only electric charging stations that provide the given level of electric vehicle supply equipment (EVSE).  Options: all, 1, 2, dc_fast, legacy.
@@ -224,7 +224,7 @@ station_by_id <- function(api_key, station_id) {
 #'
 #' @param api_key Character. An authorized API key for the NREL API service. API keys can be requested at \url{https://developer.nrel.gov/signup/}
 #'
-#' @return An object of class POSIXct contining the date and time of the most recent data update.
+#' @return An object of class POSIXct containing the date and time of the most recent data update.
 #' @export
 #'
 #' @examples

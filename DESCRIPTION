@@ -1,5 +1,5 @@
 Package: altfuelr
-Title: Provides an Interface to the NREL Alternate Fuels Locator API
+Title: Provides an Interface to the NREL Alternate Fuels Locator
 Version: 0.1.0
 Authors@R: 
     person(given = "Kitt",

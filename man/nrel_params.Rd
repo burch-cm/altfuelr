@@ -47,7 +47,7 @@ nrel_params(
 
 \item{cng_psi}{Return only CNG stations that provide the specified PSI pressure. A single pressure level, or a comma separated list of multiple pressure levels, may be given.  Options: all, 2400, 3000, 3600.}
 
-\item{cng_vehicle_class}{Return only CNG stations that can accomodate the specified vehicle class size or greater.  Options: all, LD, MD, HD.}
+\item{cng_vehicle_class}{Return only CNG stations that can accommodate the specified vehicle class size or greater.  Options: all, LD, MD, HD.}
 
 \item{e85_has_blender_pump}{Logical. If TRUE, then return only E85 stations that also have a blender pump capable of providing mid-level ethanol blends.}
 

@@ -10,7 +10,7 @@ last_updated(api_key)
 \item{api_key}{Character. An authorized API key for the NREL API service. API keys can be requested at \url{https://developer.nrel.gov/signup/}}
 }
 \value{
-An object of class POSIXct contining the date and time of the most recent data update.
+An object of class POSIXct containing the date and time of the most recent data update.
 }
 \description{
 Retrieve the Date of Last API Data Update.
