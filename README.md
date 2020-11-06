@@ -11,12 +11,14 @@ status](https://travis-ci.com/burch-cm/altfuelr.svg?branch=master)](https://trav
 
 The goal of altfuelr is to provide an R-friendly interface to the
 National Renewable Energy Laboratory (NREL) alternative fuel location
-tools. The NREL Alternative Fuels Data Center provides resources to
-locate fueling stations around the US and Canada by fuel type. These
-tools are used by DOT constituent agencies to determine the best
-location for new vehicles, and can be used outside of government
-reporting for trip planning, planning a new vehicle purchase, or helping
-determine the cost of living in an area.
+tools, located at
+<https://https://developer.nrel.gov/docs/transportation/alt-fuel-stations-v1/>.
+The NREL Alternative Fuels Data Center provides resources to locate
+fueling stations around the US and Canada by fuel type. These tools are
+used by DOT constituent agencies to determine the best location for new
+vehicles, and can be used outside of government reporting for trip
+planning, planning a new vehicle purchase, or helping determine the cost
+of living in an area.
 
 The altfuelr package contains the NREL AFDC alternate fuel data set, and
 provides R-friendly API interfaces to get information from the updated
@@ -88,9 +90,9 @@ stations(nc_stations) %>%
 #> 1 BD               112
 #> 2 CNG               40
 #> 3 E85               89
-#> 4 ELEC             807
+#> 4 ELEC             808
 #> 5 LNG                2
-#> 6 LPG               86
+#> 6 LPG               85
 ```
 
 The count\_stations() helper function can pull out additional
@@ -104,12 +106,12 @@ count_results(nc_stations)
 #>   <chr>              <int>
 #> 1 BD_stations          112
 #> 2 E85_stations          89
-#> 3 ELEC_outlets        2159
-#> 4 ELEC_stations        807
+#> 3 ELEC_outlets        2157
+#> 4 ELEC_stations        808
 #> 5 HY_stations            0
 #> 6 LNG_stations           2
 #> 7 CNG_stations          40
-#> 8 LPG_stations          86
+#> 8 LPG_stations          85
 ```
 
 ### Fleet Planning

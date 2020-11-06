@@ -7,13 +7,20 @@
 ## R CMD check results  
 There were no ERRORs or WARNINGs
 
-There was one NOTE:
-
-* checking CRAN incoming feasibility ... NOTE
-  Possibly mis-spelled words in DESCRIPTION:
-    AFL (12:9)
-    NREL (2:37, 11:42, 13:62)
+There were no NOTEs
   
-These are not misspellings, but are acronyms associated with the 
-National Renewable Energy Laboratory and its associated Alternative Fuel Locator
-tool, to which this package provides API access.
+## Corrections of Issues from Previous Sumbission  
+
+Issue: Please add a web reference for the API in the form <https:.....> to the
+description of the DESCRIPTION file with no space after 'https:' and
+angle brackets for auto-linking.
+
+Correction: Web reference to API URL included in DESCRIPTION and README.md files.
+
+
+Issue: Please always add all authors, contributors and copyright holders in the
+Authors@R field with the appropriate roles. e.g.: Christopher Burch
+
+Correction: Previously the DESCRIPTION file mixed the author's given name and 
+nickname. The roles field has been updated to remove the author's nickname and 
+now only lists the given name.
