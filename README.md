@@ -6,7 +6,7 @@
 <!-- badges: start -->
 
 [![Travis build
-status](https://travis-ci.com/burch-cm/altfuelr.svg?branch=master)](https://travis-ci.com/burch-cm/altfuelr)
+status](https://travis-ci.com/burch-cm/altfuelr.svg?branch=main)](https://travis-ci.com/burch-cm/altfuelr)
 <!-- badges: end -->
 
 The goal of altfuelr is to provide an R-friendly interface to the
