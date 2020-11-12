@@ -32,17 +32,15 @@ Requests](https://developer.nrel.gov/docs/api-key/).
 
 ## Installation
 
-<!-- You can install the released version of altfuelr from [CRAN](https://CRAN.R-project.org) with: -->
+You can install the released version of altfuelr from
+[CRAN](https://CRAN.R-project.org) with:
 
-<!-- ``` r -->
+``` r
+install.packages("altfuelr")
+```
 
-<!-- install.packages("altfuelr") -->
-
-<!-- ``` -->
-
-Altfuelr has been submitted to CRAN, but has not yet been approved. If
-you want to use altfuelr yourself, you can install the development
-version from [GitHub](https://github.com/burch-cm/altfuelr) with:
+Or you can install the development version from
+[GitHub](https://github.com/burch-cm/altfuelr) with:
 
 ``` r
 # install.packages("devtools")
@@ -90,7 +88,7 @@ stations(nc_stations) %>%
 #> 1 BD               112
 #> 2 CNG               40
 #> 3 E85               89
-#> 4 ELEC             808
+#> 4 ELEC             810
 #> 5 LNG                2
 #> 6 LPG               85
 ```
@@ -106,8 +104,8 @@ count_results(nc_stations)
 #>   <chr>              <int>
 #> 1 BD_stations          112
 #> 2 E85_stations          89
-#> 3 ELEC_outlets        2157
-#> 4 ELEC_stations        808
+#> 3 ELEC_outlets        2165
+#> 4 ELEC_stations        810
 #> 5 HY_stations            0
 #> 6 LNG_stations           2
 #> 7 CNG_stations          40

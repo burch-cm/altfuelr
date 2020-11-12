@@ -32,13 +32,13 @@ NREL requires an API key to query any of their tools. You can request an API key
 
 ## Installation  
 
-<!-- You can install the released version of altfuelr from [CRAN](https://CRAN.R-project.org) with: -->
+You can install the released version of altfuelr from [CRAN](https://CRAN.R-project.org) with:
 
-<!-- ``` r -->
-<!-- install.packages("altfuelr") -->
-<!-- ``` -->
+``` r
+install.packages("altfuelr")
+```
 
-Altfuelr has been submitted to CRAN, but has not yet been approved. If you want to use altfuelr yourself, you can install the development version from [GitHub](https://github.com/burch-cm/altfuelr) with:
+Or you can install the development version from [GitHub](https://github.com/burch-cm/altfuelr) with:
 
 ``` r
 # install.packages("devtools")
