@@ -5,6 +5,8 @@
 
 <!-- badges: start -->
 
+[![CRAN status
+badge](https://www.r-pkg.org/badges/version/altfuelr)](https://cran.r-project.org/package=altfuelr)
 [![Travis build
 status](https://travis-ci.com/burch-cm/altfuelr.svg?branch=main)](https://travis-ci.com/burch-cm/altfuelr)
 <!-- badges: end -->
